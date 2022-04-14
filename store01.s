@@ -5,12 +5,13 @@
  */
 
 .data
+.asciz "string"
 
 .balign 4
 myvar1:
     .word 0
 
-.align 4
+.balign 4
 myvar2:
     .word 0
 

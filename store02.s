@@ -3,6 +3,7 @@
  * Created April 2022
  * This program stores a variable
  */
+
 .data
 myvar1:
     .word 0
@@ -13,8 +14,8 @@ myvar2:
 
 .global main
 main:
-ldr r1, =myvar1 @ r1 <- &myvar1
-mov r3, #3 @ r3 <- 3
+    ldr r1, =myvar1 @ r1 <- &myvar1
+    mov r3, #3 @ r3 <- 3
     str r3, [r1] @ *r1 <- r3
     ldr r2, =myvar2 @ r2 <- &myvar2
     mov r3, #4 @ r3 <- 4
